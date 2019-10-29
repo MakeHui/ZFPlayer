@@ -7,11 +7,12 @@
 //
 
 #import "ZFCustomControlView1.h"
-#import "UIView+ZFFrame.h"
-#import "ZFUtilities.h"
+#import <ZFPlayer/UIView+ZFFrame.h>
+#import <ZFPlayer/ZFUtilities.h>
 #import <ZFPlayer/ZFPlayer.h>
-#import "ZFSliderView.h"
-#import "UIImageView+ZFCache.h"
+#import <ZFPlayer/ZFSliderView.h>
+#import <ZFPlayer/UIImageView+ZFCache.h>
+
 
 @interface ZFCustomControlView1 () <ZFSliderViewDelegate>
 

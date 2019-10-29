@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import <ZFPlayer/ZFPlayerMediaControl.h>
-#import "ZFSpeedLoadingView.h"
+#import <ZFPlayer/ZFSpeedLoadingView.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
