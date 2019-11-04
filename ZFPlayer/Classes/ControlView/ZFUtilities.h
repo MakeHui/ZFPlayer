@@ -26,7 +26,12 @@
 #import <UIKit/UIKit.h>
 
 /// iPhoneX  iPhoneXS  iPhoneXS Max  iPhoneXR 机型判断
-#define iPhoneX ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? ((NSInteger)(([[UIScreen mainScreen] currentMode].size.height/[[UIScreen mainScreen] currentMode].size.width)*100) == 216) : NO)
+#define iPhoneX \
+({BOOL isPhoneX = NO;\
+if (@available(iOS 11.0, *)) {\
+isPhoneX = [[UIApplication sharedApplication] delegate].window.safeAreaInsets.bottom > 0.0;\
+}\
+(isPhoneX);})
 
 #define ZFPlayer_Image(file)                 [ZFUtilities imageNamed:file]
 
